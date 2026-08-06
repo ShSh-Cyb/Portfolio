@@ -3,55 +3,396 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porte folio Shoghi Sheida</title>
+    <title>Portfolio Shoghi Sheida - BTS SIO SISR</title>
+
     <!-- icone de l'onglet -->
-    <link rel="icon" href="./Image/./logo-head.png" />
+    <link rel="icon" href="./Image/logo-head.png" />
+
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- ========================= -->
+    <!-- Vidéo en arrière-plan -->
+    <!-- ========================= -->
     <div class="video-background">
       <video autoplay muted loop>
         <source src="./Vidéo/Vidéo1.mp4" type="video/mp4" />
       </video>
     </div>
 
+    <!-- ========================= -->
+    <!-- Barre de navigation -->
+    <!-- ========================= -->
     <nav>
-      <!-- ul = unordered list -->
       <ul>
-        <li>Acceuil</li>
-        <li>Présentation</li>
-        <li>Compétences</li>
-        <li>Projets</li>
-        <li>Contact</li>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#documentations">Documentations</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <header></header>
-    <!-- un seul h1 par page -->
-    <h1>Titre principale</h1>
-    <p>coucou <em>texte en italique</em> <strong>texte en gras</strong></p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt a odio
-      commodi iusto! Assumenda explicabo dolor delectus modi deserunt
-      perspiciatis laborum, excepturi repudiandae! Eligendi, dignissimos quod
-      veritatis quia magnam commodi. Veniam necessitatibus animi voluptatem
-      aliquid esse architecto recusandae officiis dolorum quaerat obcaecati
-      numquam, nisi praesentium quam temporibus iste aliquam.
-    </p>
+
+    <!-- ========================= -->
+    <!-- ACCUEIL / HERO -->
+    <!-- ========================= -->
+    <header id="accueil" class="hero">
+      <p class="hero-badge">BTS SIO SISR • Administrateur Systèmes &amp; Réseaux</p>
+
+      <h1 class="hero-name">
+        <span class="hero-firstname">Shoghi</span>
+        <span class="hero-lastname">Sheida</span>
+      </h1>
+
+      <p class="hero-tagline">
+        Passionné par <strong class="accent-primary">l'administration système</strong> et
+        <strong class="accent-secondary">la cybersécurité</strong>.
+      </p>
+      <!-- TODO: précise ton établissement et le cœur de tes missions -->
+      <p class="hero-description">
+        Étudiant en <strong>BTS SIO</strong>, option <strong>SISR</strong>, je développe mes
+        compétences en administration système, sécurité réseau et infrastructure informatique.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#documentations" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+
+      <a href="#apropos" class="hero-scroll" aria-label="Défiler vers la section suivante">˅</a>
+    </header>
+
     <main>
-      <section>
-        <h2>Ordered List</h2>
-        <ol>
-          <li>Premier élément</li>
-          <li>Deuxième élément</li>
-          <li>Troisième élément</li>
+      <!-- ========================= -->
+      <!-- À PROPOS -->
+      <!-- ========================= -->
+      <section id="apropos">
+        <h2>À propos de moi</h2>
+        <p class="section-subtitle">Découvrez mon parcours, mes compétences et ma passion pour l'informatique</p>
+
+        <div class="apropos-grid">
+          <!-- ===== Carte profil ===== -->
+          <div class="card profile-card">
+            <!-- TODO: remplace par ta photo, sinon garde l'avatar par défaut -->
+            <!-- <img src="./Image/photo-profil.jpg" alt="Photo de Shoghi Sheida" class="profile-avatar" /> -->
+            <div class="profile-avatar profile-avatar-placeholder">SS</div>
+
+            <h3 class="profile-name">Shoghi Sheida</h3>
+            <p class="profile-role">Étudiant en BTS SIO SISR</p>
+
+            <ul class="profile-info">
+              <!-- TODO: complète ces informations -->
+              <li>📍 [Ville, Pays]</li>
+              <li>✉️ <a href="mailto:shoghijean@gmail.com">shoghijean@gmail.com</a></li>
+              <li>🔗 [github.com/ton-pseudo]</li>
+            </ul>
+
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-value">3</span>
+                <span class="stat-label">Blocs de compétences</span>
+              </div>
+              <div class="stat-item">
+                <!-- TODO: nombre de projets/documentations réalisés -->
+                <span class="stat-value">0</span>
+                <span class="stat-label">Projets réalisés</span>
+              </div>
+            </div>
+
+            <a href="./Documents/CV.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+          </div>
+
+          <!-- ===== Colonne de droite ===== -->
+          <div class="apropos-details">
+            <div class="card qui-suis-je-card">
+              <h3><span class="icon-badge">🙂</span> Qui suis-je ?</h3>
+              <!-- TODO: qui es-tu, ton parcours, ton entreprise d'alternance/stage -->
+              <p>
+                Je suis actuellement en <strong>BTS Services Informatiques aux Organisations</strong>,
+                option <strong>SISR</strong>, au sein de [Nom de l'établissement]. En alternance / stage chez
+                [Nom de l'entreprise], j'interviens sur [type de missions : support, administration réseau, etc.].
+              </p>
+              <p>
+                <!-- TODO: complète avec tes objectifs professionnels -->
+                Mon objectif est de [poursuite d'études / insertion professionnelle] dans le domaine de
+                [administration systèmes et réseaux / cybersécurité / etc.].
+              </p>
+            </div>
+
+            <div class="apropos-subgrid">
+              <div class="card">
+                <h4>Points forts</h4>
+                <ul class="list-dot">
+                  <!-- TODO: adapte à tes qualités -->
+                  <li>Autonomie</li>
+                  <li>Rigueur</li>
+                  <li>Esprit d'équipe</li>
+                  <li>Capacité d'adaptation</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Centres d'intérêt</h4>
+                <ul class="list-dot">
+                  <!-- TODO: adapte à tes centres d'intérêt -->
+                  <li>Cybersécurité</li>
+                  <li>Nouvelles technologies</li>
+                  <li>[Centre d'intérêt]</li>
+                  <li>[Centre d'intérêt]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>vidéos</h2>
-        <article><video src="./Vidéo/migration wp sur serveur.mov" height="300" controls></video></article>
+
+      <!-- ========================= -->
+      <!-- FORMATION -->
+      <!-- ========================= -->
+      <section id="formation">
+        <h2>Formation</h2>
+        <p class="section-subtitle">
+          Formation professionnalisante de niveau Bac+2 qui prépare aux métiers de l'informatique,
+          avec une spécialisation en administration des systèmes et réseaux (SISR).
+        </p>
+
+        <div class="card formation-stats-card">
+          <div class="stat-block">
+            <span class="icon-badge">🕒</span>
+            <div>
+              <h4>Organisation</h4>
+              <p>2 ans de formation</p>
+            </div>
+          </div>
+          <div class="stat-block">
+            <span class="icon-badge">📘</span>
+            <div>
+              <h4>Programme</h4>
+              <p>3 blocs de compétences + compétences transversales</p>
+            </div>
+          </div>
+          <div class="stat-block">
+            <span class="icon-badge">🎓</span>
+            <div>
+              <h4>Validation</h4>
+              <p>Diplôme d'État — BTS SIO SISR</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="formation-subsection-title">Blocs de compétences</h3>
+        <div class="grid-cards">
+          <article class="card competence-card">
+            <h3>Bloc 1 — Support et mise à disposition de services informatiques</h3>
+            <ul>
+              <!-- TODO: liste tes compétences / exemples concrets pour ce bloc -->
+              <li>Répondre aux demandes des utilisateurs (support N1/N2)</li>
+              <li>Développer la présence en ligne de l'organisation</li>
+              <li>Travailler en mode projet</li>
+              <li>Mettre à disposition des utilisateurs un service informatique</li>
+            </ul>
+          </article>
+
+          <article class="card competence-card">
+            <h3>Bloc 2 — Cybersécurité des services informatiques</h3>
+            <ul>
+              <!-- TODO: liste tes compétences / exemples concrets pour ce bloc -->
+              <li>Protéger les données à caractère personnel</li>
+              <li>Préserver l'identité numérique de l'organisation</li>
+              <li>Sécuriser les équipements et les usages des utilisateurs</li>
+              <li>Assurer la disponibilité, l'intégrité et la confidentialité des services</li>
+            </ul>
+          </article>
+
+          <article class="card competence-card">
+            <h3>Bloc 3 — Administration des systèmes et réseaux (spécifique SISR)</h3>
+            <ul>
+              <!-- TODO: liste tes compétences / exemples concrets pour ce bloc -->
+              <li>Installer, configurer et administrer des systèmes et des réseaux</li>
+              <li>Gérer la mise en production de services informatiques</li>
+              <li>Maintenir des services informatiques</li>
+              <li>Superviser les performances et le bon fonctionnement d'un service informatique</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="formation-subsection-title">Compétences transversales</h3>
+        <div class="grid-cards">
+          <article class="card competence-card">
+            <h4>Gestion de projet</h4>
+            <p><!-- TODO: exemples de projets pilotés / méthodes utilisées (Agile, Trello, etc.) --></p>
+          </article>
+          <article class="card competence-card">
+            <h4>Communication</h4>
+            <p><!-- TODO: rédaction technique, présentation orale, relation client --></p>
+          </article>
+          <article class="card competence-card">
+            <h4>Travail en équipe</h4>
+            <p><!-- TODO: exemples de travail collaboratif (PPE, entreprise) --></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========================= -->
+      <!-- DOCUMENTATIONS / PROJETS / PPE -->
+      <!-- ========================= -->
+      <section id="documentations">
+        <h2>Mes Documentations</h2>
+        <p class="section-subtitle">Découvrez mes réalisations techniques en administration système, réseau et sécurité</p>
+
+        <div class="filter-pills" data-filter-target="documentations-grid">
+          <button type="button" class="filter-pill active" data-filter="all">Tous</button>
+          <button type="button" class="filter-pill" data-filter="projet">Projets / PPE</button>
+          <button type="button" class="filter-pill" data-filter="stage">Stage / Alternance</button>
+          <button type="button" class="filter-pill" data-filter="parc">Gestion de parc</button>
+        </div>
+
+        <div class="grid-cards" id="documentations-grid">
+          <!-- ===== TEMPLATE PROJET : duplique ce bloc <article> pour chaque projet ===== -->
+          <article class="card project-card" data-category="projet">
+            <!-- <img src="./Image/projet-exemple.jpg" alt="Aperçu du projet" class="project-image" /> -->
+            <h3>[Titre du projet]</h3>
+            <div class="tech-badges">
+              <!-- TODO: technologies/outils utilisés -->
+              <span class="tech-badge">Ex: Windows Server</span>
+              <span class="tech-badge">Ex: Active Directory</span>
+              <span class="tech-badge">Ex: VMware</span>
+            </div>
+            <p><strong>Contexte :</strong> <!-- TODO: cadre du projet (PPE, entreprise, personnel) --></p>
+            <p><strong>Objectifs :</strong> <!-- TODO: ce qu'il fallait accomplir --></p>
+            <p><strong>Réalisation :</strong> <!-- TODO: ce que tu as fait concrètement --></p>
+            <p><strong>Résultats :</strong> <!-- TODO: ce qui a été livré / appris --></p>
+            <!-- <a href="#" class="btn btn-secondary">Voir le détail</a> -->
+          </article>
+          <!-- ===== FIN TEMPLATE ===== -->
+
+          <!-- Carte Migration WordPress sur serveur -->
+          <article class="card project-card" data-category="projet">
+            <!-- TODO: remplace YOUR_VIDEO_ID par l'ID de ta vidéo YouTube (ex: dQw4w9WgXcQ), idéalement en non-listée -->
+            <div class="project-video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Démonstration : Migration WordPress sur serveur"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>Migration WordPress sur serveur</h3>
+            <div class="tech-badges">
+              <!-- TODO: complète/ajuste les technologies utilisées -->
+              <span class="tech-badge">WordPress</span>
+              <span class="tech-badge">Serveur</span>
+            </div>
+            <p><strong>Contexte :</strong> <!-- TODO: cadre du projet (PPE, entreprise, personnel) --></p>
+            <p><strong>Objectifs :</strong> <!-- TODO: ce qu'il fallait accomplir --></p>
+            <p><strong>Réalisation :</strong> <!-- TODO: ce que tu as fait concrètement --></p>
+            <p><strong>Résultats :</strong> <!-- TODO: ce qui a été livré / appris --></p>
+          </article>
+
+          <!-- Carte Gestion de parc informatique -->
+          <article class="card project-card" data-category="parc stage">
+            <h3>Gestion du parc informatique</h3>
+            <div class="tech-badges">
+              <span class="tech-badge">Gestion de parc</span>
+              <!-- TODO: outils utilisés (GLPI, Glpi-Inventory, etc.) -->
+              <span class="tech-badge">Ex: GLPI</span>
+            </div>
+            <p>
+              <!-- TODO: contexte : dans quelle structure as-tu géré un parc informatique -->
+              Dans le cadre de [mon alternance / stage / PPE], j'ai participé à la gestion du parc
+              informatique suivant.
+            </p>
+            <div class="table-wrapper">
+              <table class="parc-table">
+                <thead>
+                  <tr>
+                    <th>Matériel / Logiciel</th>
+                    <th>Quantité</th>
+                    <th>État</th>
+                    <th>Actions réalisées</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- TODO: duplique cette ligne <tr> pour chaque élément du parc -->
+                  <tr>
+                    <td>[Ex : Postes de travail Windows 11]</td>
+                    <td>[Ex : 20]</td>
+                    <td>[Ex : En service]</td>
+                    <td>[Ex : Déploiement, mises à jour, inventaire GLPI]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========================= -->
+      <!-- VEILLE TECHNOLOGIQUE -->
+      <!-- ========================= -->
+      <section id="veille">
+        <h2>Veille technologique</h2>
+        <p class="section-subtitle">
+          <!-- TODO: présente en 2-3 phrases comment tu organises ta veille (outils, sources) -->
+          Veille réalisée à l'aide d'outils comme [Feedly, RSS, Twitter/X, newsletters...] sur les
+          thématiques suivantes.
+        </p>
+
+        <div class="filter-pills" data-filter-target="veille-grid">
+          <button type="button" class="filter-pill active" data-filter="all">Tous les articles</button>
+          <!-- TODO: duplique un bouton par thématique de veille -->
+          <button type="button" class="filter-pill" data-filter="cybersecurite">Cybersécurité</button>
+        </div>
+
+        <div class="grid-cards" id="veille-grid">
+          <!-- ===== TEMPLATE VEILLE : duplique ce bloc <article> pour chaque sujet de veille ===== -->
+          <article class="card veille-card" data-category="cybersecurite">
+            <div class="veille-meta">
+              <span class="tech-badge">Cybersécurité</span>
+              <!-- TODO: date de publication -->
+              <span class="card-meta">[Date]</span>
+            </div>
+            <h3>[Titre du sujet de veille]</h3>
+            <div class="tech-badges">
+              <!-- TODO: mots-clés du sujet -->
+              <span class="tech-badge">#MotClé</span>
+            </div>
+            <p class="card-meta">Outils / sources utilisés : [ex. flux RSS, sites spécialisés, forums]</p>
+            <p class="veille-excerpt"><!-- TODO: résumé du sujet, ce que tu as appris, en quoi ça t'est utile --></p>
+            <div class="veille-footer">
+              <button type="button" class="btn btn-secondary btn-small toggle-lire-plus">Lire plus</button>
+              <button type="button" class="btn btn-secondary btn-small toggle-sources">Sources</button>
+            </div>
+            <ul class="veille-sources">
+              <!-- TODO: liste tes sources -->
+              <li><a href="#" target="_blank" rel="noopener">[Lien vers la source]</a></li>
+            </ul>
+          </article>
+          <!-- ===== FIN TEMPLATE ===== -->
+        </div>
       </section>
     </main>
+
+    <!-- ========================= -->
+    <!-- CONTACT -->
+    <!-- ========================= -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>N'hésitez pas à me contacter pour toute question ou opportunité.</p>
+      <div class="contact-links">
+        <a href="mailto:shoghijean@gmail.com" class="btn btn-primary">shoghijean@gmail.com</a>
+        <!-- TODO: ajoute tes liens LinkedIn / GitHub si tu en as -->
+        <!-- <a href="https://linkedin.com/in/..." class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a> -->
+        <!-- <a href="https://github.com/..." class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a> -->
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Pied de page -->
+    <!-- ========================= -->
     <footer>
-      <a href="mailto:shoghijean@gmail.com"> Contacter moi</a>
+      <p>&copy; 2026 Shoghi Sheida — Portfolio BTS SIO SISR</p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
